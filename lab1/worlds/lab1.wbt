@@ -1,0 +1,67 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Cat.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/vehicles/protos/generic/MotorbikeSimple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/PedestrianCrossing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/GenericTrafficLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/ControlledStreetLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.09386882936897402 0.05472876084551906 0.9940791747185997 2.091080265313391
+  position 16.0523024001514 -30.34282276692466 9.243260350516424
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  texture "stadium"
+}
+RectangleArena {
+  floorSize 15 15
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.09
+  wallHeight 0
+  wallAppearance BrushedAluminium {
+    colorOverride 0.101961 0.372549 0.705882
+  }
+}
+PedestrianCrossing {
+  translation 0 0 -0.19
+  rotation 0 0 1 0.785397
+  size 19 3
+}
+Pedestrian {
+  translation -0.930429 -0.930439 1.27
+  rotation 0 0 1 0.7853996938995746
+  shirtColor 0.862745 0.541176 0.866667
+  pantsColor 1 1 1
+}
+Cat {
+  translation -1.24157 -0.655504 0
+  rotation 0 0 1 0.785402
+}
+MotorbikeSimple {
+  translation 5.33904 -1.85845 0.25
+  rotation 0 0 1 2.35619
+}
+GenericTrafficLight {
+  translation 3.515 6.08801 0
+  rotation 0 0 1 -1.047195307179586
+  startGreen FALSE
+  greenTime 15
+  redTime 60
+  state "green"
+}
+ControlledStreetLight {
+  translation -1.49699 -6.48878 -0.14
+  rotation 0 0 1 1.0472
+}
